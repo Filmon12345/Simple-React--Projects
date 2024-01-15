@@ -24,6 +24,9 @@ console.log(selected,multiple)
     return (
       <div className="wrapper">
         <button
+        style={{
+          backgroundColor:`${enableMultiSelection?'#f500ff' :'purple'}`
+        }}
         onClick={()=>setEnableMultiSelection(!enableMultiSelection)}
         >Enable Multi-Selection</button>
         <div className="accordian">
