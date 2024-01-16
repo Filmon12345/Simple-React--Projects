@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 export default function RandomColor() {
   const [typeofColor, setTypeofColor] = useState("hex");
@@ -22,6 +22,12 @@ export default function RandomColor() {
   const b = randomColorUtility(256);
   setColor(`rgb(${r}, ${g},${b})`);
   }
+
+  useEffect(()=>{
+if (typeofColor === "rgb") handleCreateRandomRgbColor();
+else handleCreateRandomHexColor();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[typeofColor])
   return (
     <div
       className="container"
