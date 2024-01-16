@@ -1,0 +1,37 @@
+
+.Hex-btn ,.Rgb-btn{
+    padding: 26px 50px ;
+    margin-right: 6px;
+    margin-top: 10px;
+    background-color: rgb(115, 4, 115);
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+}
+.Hex-btn:hover, .Rgb-btn:hover ,.Random-btn:hover{
+    background-color: rgb(107, 91, 107);
+    color:#eee;
+}
+.Random-btn{
+    border-radius: 6px;
+    border: none;
+    padding: 19px 50px ;
+    margin-right: 6px;
+    background-color: rgb(6, 190, 214);
+    font-weight: bold;
+    color: black;
+}
+
+.display{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#eee;
+    font-size:40px;
+    margin-top: 20px;
+    flex-direction: column;
+   
+
+
+
+}
